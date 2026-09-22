@@ -63,7 +63,7 @@ void loop() {
   int esq = digitalRead(iresq);
   int cen = digitalRead(ircen);
   int dir = digitalRead(irdir);
-  if (dir == LOW && esq == LOW && cen == HIGH00
+  if (dir == LOW && esq == LOW && cen == HIGH){
     frente();
 } else if (esq == LOW && dir == HIGH && cen == LOW) {
   direita();
